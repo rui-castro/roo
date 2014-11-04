@@ -3,7 +3,7 @@
 Roo implements read access for all spreadsheet types and read/write access for
 Google spreadsheets. It can handle
 * OpenOffice
-* Excel
+* ~~Excel~~
 * Google spreadsheets
 * Excelx
 * LibreOffice
@@ -11,8 +11,7 @@ Google spreadsheets. It can handle
 
 ### XLS
 
-There is no support for formulas in Roo for .xls files - you can get the result
-of a formula but not the formula itself.
+**This fork of Roo does not have support for .xls files.**
 
 ### Google Spreadsheet
 
@@ -20,7 +19,8 @@ Using Roo to access Google spreadsheets requires you install the 'google-spreads
 
 ## License
 
-While Roo is licensed under the MIT / Expat license, please note that the 'spreadsheet' gem [is released under](https://github.com/zdavatz/spreadsheet/blob/master/LICENSE.txt) the GPLv3 license.
+**Since this fork doesn't use the 'spreadsheet' gem, the license is MIT / Expat license.**
+~~While Roo is licensed under the MIT / Expat license, please note that the 'spreadsheet' gem [is released under](https://github.com/zdavatz/spreadsheet/blob/master/LICENSE.txt) the GPLv3 license.~~
 
 ## Usage:
 
@@ -28,7 +28,7 @@ While Roo is licensed under the MIT / Expat license, please note that the 'sprea
 require 'roo'
 
 s = Roo::OpenOffice.new("myspreadsheet.ods")      # loads an OpenOffice Spreadsheet
-s = Roo::Excel.new("myspreadsheet.xls")           # loads an Excel Spreadsheet
+~~s = Roo::Excel.new("myspreadsheet.xls")           # loads an Excel Spreadsheet~~
 s = Roo::Google.new("myspreadsheetkey_at_google") # loads a Google Spreadsheet
 s = Roo::Excelx.new("myspreadsheet.xlsx")         # loads an Excel Spreadsheet for Excel .xlsx files
 s = Roo::CSV.new("mycsv.csv")                     # loads a CSV file
@@ -66,8 +66,11 @@ s.last_column                               # the number of the last column
 s.font(1,1).bold?
 s.font(1,1).italic?
 s.font(1,1).underline?
+```
 
+**This fork of Roo doesn't use the 'spreadsheet' gem, consequently it doesn't support .xls files. Some parts of the code bellow may not apply to this fork.**
 
+```
 # Roo::Spreadsheet requires spreadsheet gem
 require 'spreadsheet'
 

@@ -1,3 +1,4 @@
+=begin
 require 'spec_helper'
 
 describe Roo::Excel do
@@ -15,3 +16,4 @@ describe Roo::Excel do
     end
   end
 end
+=end

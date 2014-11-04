@@ -13,8 +13,8 @@ module Roo
           end
 
         case extension.downcase
-        when '.xls'
-          Roo::Excel.new(path, options)
+        #when '.xls'
+        #  Roo::Excel.new(path, options)
         when '.xlsx'
           Roo::Excelx.new(path, options)
         when '.ods'

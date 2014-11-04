@@ -26,7 +26,7 @@ module Roo
 
   autoload :OpenOffice,   'roo/openoffice'
   autoload :LibreOffice,  'roo/openoffice'
-  autoload :Excel,        'roo/excel'
+  #autoload :Excel,        'roo/excel'
   autoload :Excelx,       'roo/excelx'
   autoload :Excel2003XML, 'roo/excel2003xml'
   autoload :Google,       'roo/google'

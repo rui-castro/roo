@@ -276,7 +276,8 @@ class Roo::Base
   # column numbers are 1,2,3,... like in the spreadsheet
   def column(columnnumber,sheet=nil)
     if columnnumber.class == String
-      columnnumber = Roo::Excel.letter_to_number(columnnumber)
+      #columnnumber = Roo::Excel.letter_to_number(columnnumber)
+      columnnumber = Roo::Base.letter_to_number(columnnumber)
     end
     sheet ||= @default_sheet
     read_cells(sheet)

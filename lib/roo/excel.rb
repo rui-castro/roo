@@ -1,3 +1,4 @@
+=begin
 require 'spreadsheet'
 
 # Class for handling Excel-Spreadsheets
@@ -353,3 +354,4 @@ class Roo::Excel < Roo::Base
   end
 
 end
+=end

@@ -1,3 +1,4 @@
+=begin
 # Loeschen von Dateien, wenn mit Excel geoeffnet
 require 'roo'
 
@@ -9,4 +10,4 @@ oo.first_row.upto(oo.last_row) do |row|
 		p oo.cell(row,col)
 	end
 end
-
+=end

@@ -8,10 +8,10 @@ Gem::Specification.new do |s|
   s.version = "1.13.2"
 
   s.required_rubygems_version = Gem::Requirement.new(">= 0") if s.respond_to? :required_rubygems_version=
-  s.authors = ["Thomas Preymesser", "Hugh McGowan", "Ben Woosley"]
+  s.authors = ["Thomas Preymesser", "Hugh McGowan", "Ben Woosley", "Rui Castro"]
   s.date = "2013-12-23"
-  s.description = "Roo can access the contents of various spreadsheet files. It can handle\n* OpenOffice\n* Excel\n* Google spreadsheets\n* Excelx\n* LibreOffice\n* CSV"
-  s.email = "ruby.ruby.ruby.roo@gmail.com"
+  s.description = "Roo can access the contents of various spreadsheet files. It can handle\n* OpenOffice\n* Google spreadsheets\n* Excelx\n* LibreOffice\n* CSV"
+  s.email = "rui.castro+roo@gmail.com"
   s.extra_rdoc_files = [
     "LICENSE",
     "README.markdown"
@@ -174,7 +174,7 @@ Gem::Specification.new do |s|
     "website/stylesheets/screen.css",
     "website/template.rhtml"
   ]
-  s.homepage = "http://github.com/Empact/roo"
+  s.homepage = "https://github.com/rui-castro/roo"
   s.licenses = ["MIT"]
   s.require_paths = ["lib"]
   s.required_ruby_version = Gem::Requirement.new(">= 1.9.0")
@@ -186,20 +186,20 @@ Gem::Specification.new do |s|
     s.specification_version = 4
 
     if Gem::Version.new(Gem::VERSION) >= Gem::Version.new('1.2.0') then
-      s.add_runtime_dependency(%q<spreadsheet>, ["> 0.6.4"])
+      #s.add_runtime_dependency(%q<spreadsheet>, ["> 0.6.4"])
       s.add_runtime_dependency(%q<nokogiri>, [">= 0"])
       s.add_runtime_dependency(%q<rubyzip>, [">= 0"])
       s.add_development_dependency(%q<google_drive>, [">= 0"])
       s.add_development_dependency(%q<jeweler>, [">= 0"])
     else
-      s.add_dependency(%q<spreadsheet>, ["> 0.6.4"])
+      #s.add_dependency(%q<spreadsheet>, ["> 0.6.4"])
       s.add_dependency(%q<nokogiri>, [">= 0"])
       s.add_dependency(%q<rubyzip>, [">= 0"])
       s.add_dependency(%q<google_drive>, [">= 0"])
       s.add_dependency(%q<jeweler>, [">= 0"])
     end
   else
-    s.add_dependency(%q<spreadsheet>, ["> 0.6.4"])
+    #s.add_dependency(%q<spreadsheet>, ["> 0.6.4"])
     s.add_dependency(%q<nokogiri>, [">= 0"])
     s.add_dependency(%q<rubyzip>, [">= 0"])
     s.add_dependency(%q<google_drive>, [">= 0"])

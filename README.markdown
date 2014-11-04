@@ -20,6 +20,7 @@ Using Roo to access Google spreadsheets requires you install the 'google-spreads
 ## License
 
 **Since this fork doesn't use the 'spreadsheet' gem, the license is MIT / Expat license.**
+
 ~~While Roo is licensed under the MIT / Expat license, please note that the 'spreadsheet' gem [is released under](https://github.com/zdavatz/spreadsheet/blob/master/LICENSE.txt) the GPLv3 license.~~
 
 ## Usage:
@@ -28,7 +29,6 @@ Using Roo to access Google spreadsheets requires you install the 'google-spreads
 require 'roo'
 
 s = Roo::OpenOffice.new("myspreadsheet.ods")      # loads an OpenOffice Spreadsheet
-~~s = Roo::Excel.new("myspreadsheet.xls")           # loads an Excel Spreadsheet~~
 s = Roo::Google.new("myspreadsheetkey_at_google") # loads a Google Spreadsheet
 s = Roo::Excelx.new("myspreadsheet.xlsx")         # loads an Excel Spreadsheet for Excel .xlsx files
 s = Roo::CSV.new("mycsv.csv")                     # loads a CSV file
@@ -70,7 +70,7 @@ s.font(1,1).underline?
 
 **This fork of Roo doesn't use the 'spreadsheet' gem, consequently it doesn't support .xls files. Some parts of the code bellow may not apply to this fork.**
 
-```
+```ruby
 # Roo::Spreadsheet requires spreadsheet gem
 require 'spreadsheet'
 

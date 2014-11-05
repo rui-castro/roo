@@ -9,7 +9,7 @@ Google spreadsheets. It can handle
 * LibreOffice
 * CSV
 
-### XLS
+### ~~XLS~~
 
 **This fork of Roo does not have support for .xls files.**
 
